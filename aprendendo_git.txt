@@ -1,0 +1,73 @@
+## O que é GIT
+
+Git é um sistema de versionamento de arquivos, ou seja, controle de versões utilizado principalmente para desenvolvimento de softwares.
+Permite ter controle sob tudo aquilo que foi escrito, apagado, alterado, armazenamento de versões, etc.
+Quando se trabalha em equipe é possível alterar um arquivo ao mesmo tempo que outra pessoa. É uma forma de sincronizar o que possui na máquina pessoal com a do time.
+Além disso é um sistema distribuído, ou seja, é possível trabalhar offline, pois todas as versões do projeto ficam armazenadas localmente - na máquina.
+
+
+## Conceito dos principais comandos:
+
+Branch: Permite criar, listar, renomear e excluir ramificações.
+Commit: Adiciona alterações mais recentes no código-fonte para o repositório.
+Merge: Efetua a junção das linhas de desenvolvimento independentes (branch) em uma ramificação única (master/main).
+Push: Utilizado para publicar modificações locais para um repositório central/remoto. Exemplo: Github.
+Pull: Utilizado para buscar e baixar conteúdo de repositórios remotos, além de fazer a atualização do repositório local.
+
+
+## Lista principais comandos:
+
+    Configurar usuário
+git config --global user.name "UserName"
+
+    Configurar e-mail
+git config --global user.email "UserEmail@..."
+
+    Arquivos que não serão adicionados ao repositório. Arquivos ignorados.
+git config --global core.excludesfile ~/.gitignore
+
+    Novo repositório
+git init
+
+    Verificar estados dos arquivos e/ou diretórios
+git status
+
+    Adicionar arquivo (staged area)
+git add "arquivo.txt"
+
+    Adicionar todos os arquivos
+git add .
+
+    Comitar arquivo
+git commit "arquivo.txt"
+
+    Comitar vários arquivos
+git commit "arquivo.txt" "arquivo.txt"...
+
+    Comitar com mensagem
+git commit "arquivo.txt" -m "mensagem aqui"
+
+    Enviar arquivos/diretórios para repositório remoto
+git push -u origin master/main
+
+    Atualizar arquivos branch
+git pull
+
+    Clonar um repositório remoto
+git clone "git"github.com/repositorio.git"
+
+    Criando novo branch
+git branch "nome-branch"
+
+    Trocar para branch existente
+git checkout "nome-branch"
+
+    Voltar para branch master/main
+git checkout master/main
+
+    Merge entre branches
+git merge "nome-branch"
+
+    Branch repositorio remoto
+git push origin "nome-branch"
+
